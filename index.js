@@ -5,7 +5,6 @@ const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const app = express();
 const port = process.env.PORT || 3000;
 
-
 app.use(cors());
 app.use(express.json());
 
@@ -29,7 +28,7 @@ async function run() {
         // console.log("Pinged your deployment. You successfully connected to MongoDB!");
 
         const recipeCollection = client.db('recipeDB').collection('recipe')
-        const usersCollection = client.db('recipeDB').collection('users')
+        // const usersCollection = client.db('recipeDB').collection('users')
 
       
     app.post('/recipe', async (req, res) => {
