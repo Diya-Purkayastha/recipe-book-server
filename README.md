@@ -41,7 +41,7 @@ To run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/Diya-Purkayastha/recipe-book-server.git
-   cd lawyer-appointment-app
+   cd recipe-book-server
    ```
 
 2. **Install Dependencies:**
