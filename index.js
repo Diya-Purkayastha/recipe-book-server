@@ -45,7 +45,7 @@ async function run() {
 
 
     app.get('/recipe/top', async (req, res) => {
-      const result = await recipeCollection.find().sort({ likeCount: -1 }).limit(6).toArray();
+      const result = await recipeCollection.find().sort({ likeCount: -1 }).limit(8).toArray();
       res.send(result);
     });
 
